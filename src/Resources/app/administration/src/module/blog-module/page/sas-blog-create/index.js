@@ -7,10 +7,10 @@ Component.extend('sas-blog-create', 'sas-blog-detail', {
 
     methods: {
         async createdComponent() {
-            Shopware.State.commit('adminMenu/collapseSidebar');
+            Shopware.Store.get('adminMenu').collapseSidebar();
 
             const isSystemDefaultLanguage = Shopware.State.getters['context/isSystemDefaultLanguage'];
-            this.$store.commit('cmsPageState/setIsSystemDefaultLanguage', isSystemDefaultLanguage);
+            this.cmsPageState.setIsSystemDefaultLanguage(isSystemDefaultLanguage);
             if (!isSystemDefaultLanguage) {
                 Shopware.State.commit('context/resetLanguageToDefault');
             }

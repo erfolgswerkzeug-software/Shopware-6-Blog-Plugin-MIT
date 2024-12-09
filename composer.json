@@ -1,7 +1,6 @@
 {
     "name": "thomaspeissl/blog-module-mit",
     "description": "Blog Module MIT",
-    "version": "3.0.1",
     "type": "shopware-platform-plugin",
     "keywords": ["blog", "news"],
     "license":"MIT",
@@ -13,9 +12,9 @@
         }
     ],
     "require": {
-        "shopware/core": "^6.6.0.0",
-        "shopware/administration": "^6.6.0.0",
-        "shopware/storefront": "^6.6.0.0"
+        "shopware/core": "^6.6.8.0",
+        "shopware/administration": "^6.6.8.0",
+        "shopware/storefront": "^6.6.8.0"
     },
     "require-dev":{
         "phpunit/phpunit": "^9.5",
